@@ -1,5 +1,5 @@
 
-button:hover{
+.Boton_n°:hover{
    background-color: aqua;
 
 }
@@ -61,11 +61,10 @@ input[type="email"] {
   color: red;
 }
 
-section p:first-of-type {
+.ejercicio8 p:first-of-type {
   background-color: lightblue;
   padding: 10px;
   border-radius: 5px;
-  font-weight: bold;
 }
 
 :root {
@@ -117,39 +116,80 @@ body {
   padding: 20px;
 }
 
-/* Títulos */
-h2 {
-  color: #333;
-  margin-bottom: 8px;
+
+.iconos h3 {
   display: flex;
   align-items: center;
-  gap: 8px; /* Espacio entre el ícono y el texto */
+  gap: 8px;
+  font-size: 1.2em;
 }
 
-/* Ícono antes de cada título con Boxicons */
-
-/* Icono de Inicio */
-h2.inicio::before {
-  font-family: 'boxicons';
-  content: '\eb0a'; /* Código del ícono bx-home */
-  font-size: 1.2em;
-  color: #3498db;
+.iconos i {
+  font-size: 1.4em;
+  color: var(--color-principal);
 }
 
-/* Icono de Servicios */
-h2.servicios::before {
-  font-family: 'boxicons';
-  content: '\ec39'; /* Código del ícono bx-cog */
-  font-size: 1.2em;
-  color: #27ae60;
+.Decoración p{
+  position: relative;
+  padding-bottom: 10PX;
+  margin-bottom: 20PX;
+}
+.Decoración P::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-principal);
+  border-radius: 2px;
+  font-weight: normal;
 }
 
-/* Icono de Contacto */
-h2.contacto::before {
-  font-family: 'boxicons';
-  content: '\ed34'; /* Código del ícono bx-envelope */
-  font-size: 1.2em;
-  color: #e67e22;
+.Boton_sombra {
+  position: relative;
+  background-color: rgb(152, 152, 216);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.Boton_sombra::after {
+  content: "";
+  position: absolute;
+  top: 5px;    
+  left: 5px;   
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: -1; 
+}
+
+.Cita {
+  font-style: italic;
+  color: #333;
+  background-color: #f4f4f4;
+  border-left: 5px solid rgb(50, 50, 228);
+  padding: 15px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.Cita::before {
+  content: "“"; 
+  font-size: 24px;
+  color: rgb(50, 50, 228);
+  margin-right: 5px;
+}
+
+.Cita::after {
+  content: "”"; 
+  font-size: 24px;
+  color: rgb(50, 50, 228);
+  margin-left: 5px;
 }
 
 
