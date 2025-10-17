@@ -4,10 +4,152 @@ button:hover{
 
 }
 
-mensaje:target{
-     background-color: rgb(231, 223, 179);
+#mensaje {
+  display: none;
+  background-color: rgb(250, 178, 244);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 
+#mensaje:target {
+  display: block;
+}
+
+.Contenedor 
+P:first-child {
+  color: white;
+  background-color: teal;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+div form{
+    width: 450px;
+    background-color: rgb(194, 194, 236);
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 6px;
+    border: 1px solid rgba(189, 91, 91, 0.687);
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+input:invalid{
+    border: 3px solid red
 
 }
- 
+
+input[type="email"] {
+  border: 2px solid dodgerblue;
+  background-color: #e6f3ff;
+  padding: 8px;
+  border-radius: 5px;}
+
+  input:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;}
+
+  main :only-of-type {
+  color: red;
+}
+
+section p:first-of-type {
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+:root {
+  --color-principal: #c48796; 
+}
+
+h2 {
+  color: var(--color-principal);
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-principal);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color:#f4f4f4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Títulos */
+h2 {
+  color: #333;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el ícono y el texto */
+}
+
+/* Ícono antes de cada título con Boxicons */
+
+/* Icono de Inicio */
+h2.inicio::before {
+  font-family: 'boxicons';
+  content: '\eb0a'; /* Código del ícono bx-home */
+  font-size: 1.2em;
+  color: #3498db;
+}
+
+/* Icono de Servicios */
+h2.servicios::before {
+  font-family: 'boxicons';
+  content: '\ec39'; /* Código del ícono bx-cog */
+  font-size: 1.2em;
+  color: #27ae60;
+}
+
+/* Icono de Contacto */
+h2.contacto::before {
+  font-family: 'boxicons';
+  content: '\ed34'; /* Código del ícono bx-envelope */
+  font-size: 1.2em;
+  color: #e67e22;
+}
+
 

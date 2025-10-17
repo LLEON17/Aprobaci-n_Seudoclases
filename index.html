@@ -1,21 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilo.css">
     <title>Aprobación Seudoclases</title>
 </head>
 <body>
+  <h2>1. Crea un botón que cambie de color cuando esté en estado :hover. </h2>
+
     <button> Enviar </button>
-  
-    <ol>
-  <li><a href="#P1" class="Mensaje">¡Salta al primer párrafo!</a></li>
-</ol>
+  <h2>2. Usa :target para mostrar un mensaje oculto al hacer clic en un enlace.</h2>
+
+  <a href="#mensaje">Haz clic aquí para ver el mensaje</a>
+
+  <div id="mensaje">
+    <p> Este es el mensaje secreto.</p>
+    <a href="#">Ocultar mensaje</a>
+  </div>
+
+  <h2>3. Da un estilo especial al primer hijo de un contenedor usando :first-child.</h2>
+
+<div class="Contenedor"> 
+  <p>Parrafo Primer Hijo</p>
+  <p> Este es el segundo parrafo y no va a tomar el estilo.</p>
+  <p> Esto sucede ya que el primer parrafo es el primer hijo de la clase "contenedor".</p>
+</div>
+<h2> 4. Estiliza los campos de formulario no válidos usando :invalid. 
+<h2> 5. Resalta solo los campos de tipo email con :type.</h2>
+ <h2>6. Diseña un formulario donde el campo activo (:focus) cambie de borde.</h2>
+</h2>
+  <div> 
+        <form method ="get">
+            <input type ="text" name="Nombre" placeholder="Nombre..." required title ="Campo Obligatorio">
+            <input type ="text" name ="Apellido" placeholder="Apellido.." required>
+            <input type ="email" name ="Email" placeholder="Email.." required>
+           
+        </form>
+    </div>
+<h2>7. Estiliza únicamente los elementos únicos de su tipo con :only-of-type. </h2>
+  <main>
+  <div>Soy un "div" N°1.</div>
+  <p> Este parrafo tomará el estilo ya que el unico "P" entre los hermanos.</p>
+  <div>Soy un "div" N°2.</div>
+  </main>
+<h2>8. Aplica estilo solo al primer párrafo de una sección con :first-of-type. </h2>
+  <section> 
+    <p> Primer Parrafo de la "Section"</p>
+    <P> Otro parrafo...</P>
+  </section>
+
+    <section> 
+    <p> Segundo Parrafo de la "Section"</p>
+    <p> Otro parrafo...</p>
+  </section>
+
+<h2>10.Diseña una navegación con sus etiquetas semanticas que cambie su color al pasar
+sobre cada link. </h2>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2 class="inicio">Inicio</h2>
+    <p>Bienvenido a la página principal.</p>
+  </section>
+
+  <section>
+    <h2 class="servicios">Servicios</h2>
+    <p>Ofrecemos diferentes tipos de servicios.</p>
+  </section>
+
+  <section>
+    <h2 class="contacto">Contacto</h2>
+    <p>Puedes escribirnos cuando quieras.</p>
+  </section>
 
 
 
 
-    
 </body>
 </html>
